@@ -792,7 +792,7 @@ elif st.session_state.page == "resultat":
     # Points d'attention
     points = result.get("points_attention", [])
     if points:
-        st.markdown('<div class="sec-label">Points d'attention</div>', unsafe_allow_html=True)
+        st.markdown("<div class=\"sec-label\">Points d'attention</div>", unsafe_allow_html=True)
         warn_html = '<div class="alert alert-warn"><div><strong>⚠️ À vérifier :</strong><ul style="margin-top:6px;padding-left:18px;">'
         for p in points:
             warn_html += f"<li style='margin-bottom:4px;'>{p}</li>"
